@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="list_web.kumar.yo.aditya.webbrowse.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:id="@+id/edt"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <com.spark.submitbutton.SubmitButton
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="Back"
+            android:textColor="@color/gray"
+            android:textSize="10sp"
+            android:id="@+id/back"
+            android:layout_weight="1"
+            android:onClick="back"
+            app:sub_btn_background="@color/white"
+            app:sub_btn_duration="1000"
+            app:sub_btn_line_color="@color/colorPrimary"
+            app:sub_btn_ripple_color="@color/colorPrimary"
+            app:sub_btn_tick_color="@color/yellow" />
+
+
+        <com.spark.submitbutton.SubmitButton
+            android:id="@+id/submit"
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+
+            android:onClick="sub"
+            android:text="Submit"
+            android:textColor="@color/gray"
+            android:textSize="10sp"
+            app:sub_btn_background="@color/white"
+            app:sub_btn_duration="1000"
+
+            app:sub_btn_line_color="@color/colorPrimary"
+            app:sub_btn_ripple_color="@color/colorPrimary"
+            app:sub_btn_tick_color="@color/yellow" />
+
+        <com.spark.submitbutton.SubmitButton
+            android:id="@+id/forward"
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+android:onClick="forward"
+            android:text="Forward"
+            android:textColor="@color/gray"
+            android:textSize="10sp"
+            app:sub_btn_background="@color/white"
+            app:sub_btn_duration="1000"
+
+
+            app:sub_btn_line_color="@color/colorPrimary"
+            app:sub_btn_ripple_color="@color/colorPrimary"
+            app:sub_btn_tick_color="@color/yellow" />
+
+
+    </LinearLayout>
+
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/web"
+        ></WebView>
+
+
+
+</LinearLayout>
